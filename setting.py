@@ -1,0 +1,6 @@
+PATH_VIDEO = 'demo_video/traffic.mp4'
+PATH_PICKLE = 'cal_pickle.p'
+DIMENSION_FRAME = (640, 480)
+POINT_LIMIT = 10
+YELLOW_COLOR = ([18,94,140], [48,255,255])
+WHITE_COLOR = ([0, 0, 200], [255, 255, 255])
