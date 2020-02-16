@@ -95,7 +95,7 @@ def draw_lanes(img, left_fit, right_fit,frameWidth,frameHeight,src):
 def draw_line(img,lane_curve):
     myWidth = img.shape[1]
     myHeight = img.shape[0]
-    print(myWidth,myHeight)
+    # print(myWidth,myHeight)
     for x in range(-30, 30):
         w = myWidth // 20
         cv2.line(img, (w * x + int(lane_curve // 100), myHeight - 30),

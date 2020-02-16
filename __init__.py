@@ -13,6 +13,7 @@ def execute(capture, content_curves, index=0, _process=True):
             _frame = cv2.resize(_frame, DIMENSION_FRAME, None)
         except:
             print('Simulation completed')
+            break
 
         _final_frame = _frame.copy()
 
@@ -46,6 +47,7 @@ def execute(capture, content_curves, index=0, _process=True):
             if index >= POINT_LIMIT: 
                 index = 0
 
+            print(f'Current angle: {int(averageCurve)}')
             cv2.putText(_final_frame, str(int(averageCurve)), (DIMENSION_FRAME[0] // 2 - 70, 70), cv2.FONT_HERSHEY_DUPLEX, 1.75, (0, 0, 255), 2, cv2.LINE_AA)
 
         except Exception as ex:
